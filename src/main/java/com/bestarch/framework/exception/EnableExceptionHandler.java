@@ -1,5 +1,5 @@
 
-package com.kohls.merch.poedihub.v2.exception;
+package com.bestarch.framework.exception;
 
 import static java.lang.annotation.ElementType.METHOD;
 
@@ -8,8 +8,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import com.kohls.merch.poedihub.v2.handler.Handler;
-import com.kohls.merch.poedihub.v2.handler.impl.DefaultExceptionHandler;
+import com.bestarch.framework.exception.handler.Handler;
+import com.bestarch.framework.exception.handler.impl.DefaultExceptionHandler;
 
 /**
  * This annotation will create the necessary environment needed to delegate the exception handling to the framework.

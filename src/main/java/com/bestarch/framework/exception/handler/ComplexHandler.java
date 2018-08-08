@@ -1,4 +1,4 @@
-package com.kohls.merch.poedihub.v2.handler;
+package com.bestarch.framework.exception.handler;
 
 public interface ComplexHandler<T> extends Handler {
 	

@@ -1,4 +1,4 @@
-package com.kohls.merch.poedihub.v2.bean;
+package com.bestarch.framework.exception.bean;
 
 /**
  * Parent return object which would be returned whatever may be the result of the call.

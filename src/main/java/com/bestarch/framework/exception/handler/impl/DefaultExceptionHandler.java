@@ -1,10 +1,10 @@
-package com.kohls.merch.poedihub.v2.handler.impl;
+package com.bestarch.framework.exception.handler.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import com.kohls.merch.poedihub.v2.handler.SimpleHandler;
+import com.bestarch.framework.exception.handler.SimpleHandler;
 
 /**
  * This will be called if no error handler is provided with <code>@EnableExceptionHandler</code>.

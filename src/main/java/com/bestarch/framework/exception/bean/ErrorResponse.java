@@ -1,4 +1,4 @@
-package com.kohls.merch.poedihub.v2.bean;
+package com.bestarch.framework.exception.bean;
 
 /**
  * Container object that should contain the actual error object

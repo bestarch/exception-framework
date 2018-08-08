@@ -1,4 +1,4 @@
-package com.kohls.merch.poedihub.v2.handler;
+package com.bestarch.framework.exception.handler;
 
 /**
  * Marker interface for all the exception handlers
