@@ -2,7 +2,7 @@ package com.bestarch.framework.exception.handler;
 
 /**
  * Marker interface for all the exception handlers
- * @author abhishek.srivastava4
+ * @author bestarch
  *
  */
 public interface Handler {

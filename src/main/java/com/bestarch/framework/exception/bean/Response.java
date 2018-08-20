@@ -36,7 +36,7 @@ package com.bestarch.framework.exception.bean;
  * </ul>
  * <br>
  * <code>entity</code> variable contains the actual response
- * @author abhishek.srivastava4
+ * @author bestarch
  * 
  */
 public class Response {

@@ -3,7 +3,7 @@ package com.bestarch.framework.exception.bean;
 /**
  * Container object that should contain the actual error object
  * 
- * @author abhishek.srivastava4
+ * @author bestarch
  *
  */
 public class ErrorResponse {

@@ -16,7 +16,7 @@ import com.bestarch.framework.exception.handler.impl.DefaultExceptionHandler;
  * Always, annotate the configuration class with <code>@EnableAspectJAutoProxy</code> in order to configure the exception framework
  * correctly
  * 
- * @author abhishek.srivastava4
+ * @author bestarch
  *
  */
 @Documented

@@ -17,6 +17,11 @@ import com.bestarch.framework.exception.handler.ComplexHandler;
 import com.bestarch.framework.exception.handler.Handler;
 import com.bestarch.framework.exception.handler.SimpleHandler;
 
+/**
+ * 
+ * @author bestarch
+ *
+ */
 @Configuration
 @Aspect
 public class ExceptionAspect {

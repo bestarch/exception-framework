@@ -19,7 +19,7 @@ import com.bestarch.framework.exception.handler.SimpleHandler;
 		errorResponse.setResponseCode("ERROR");<br>
 		return errorResponse;
  * </code>
- * @author abhishek.srivastava4
+ * @author bestarch
  *
  */
 @Component
