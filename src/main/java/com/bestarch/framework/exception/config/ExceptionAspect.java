@@ -11,7 +11,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 
-import com.bestarch.framework.exception.EnableExceptionHandler;
+import com.bestarch.framework.exception.HandleException;
 import com.bestarch.framework.exception.bean.Response;
 import com.bestarch.framework.exception.handler.ComplexHandler;
 import com.bestarch.framework.exception.handler.Handler;
@@ -31,7 +31,7 @@ public class ExceptionAspect {
 	@Autowired
 	private ApplicationContext context;
 	
-	@Around(value = "execution(public * *(..)) && target(bean) && @annotation(com.bestarch.framework.exception.EnableExceptionHandler)")
+	@Around(value = "execution(public * *(..)) && target(bean) && @annotation(com.bestarch.framework.exception.HandleException)")
 	public Object wrapAround(ProceedingJoinPoint joinPoint, Object bean) throws Throwable  {
 		Response response = null;
 		try {
@@ -40,7 +40,7 @@ public class ExceptionAspect {
 	    	LOGGER.info("Received an exception of type {}", t.getClass());
 			if (t instanceof Exception) {
 				MethodSignature signature = (MethodSignature) joinPoint.getSignature();
-				EnableExceptionHandler enableExceptionHandler = signature.getMethod().getAnnotation(EnableExceptionHandler.class);
+				HandleException enableExceptionHandler = signature.getMethod().getAnnotation(HandleException.class);
 				Class<? extends Handler> handler = enableExceptionHandler.handler();
 				Handler actualhandler = (Handler) context.getBean(StringUtils.uncapitalize(handler.getSimpleName()));
 				if (SimpleHandler.class.isAssignableFrom(actualhandler.getClass())) {
